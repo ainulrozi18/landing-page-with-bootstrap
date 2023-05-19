@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page with Bootstrap</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+</head>
+
+<style>
+    @media only screen and (max-width: 1000px) {
+        .img-responsive-none {
+            display: none;
+        }
+    }
+
+    .text-gradient {
+        background: -webkit-linear-gradient(#2937f0, #9f1ae2);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .card-custom {
+        width: 300px;
+        height: 400px;
+        padding-left: 40px;
+        box-shadow: 0px 16px 48px rgb(160, 160, 160 /15%);
+        transition: all .15s ease-in;
+        border: 0 !important;
+    }
+
+    .card-custom:hover {
+        transform: translateY(-4px);
+        box-shadow: 0px 16px 48px rgba(160, 160, 160, 0.15), 0px 16px 48px rgba(160, 160, 160, 0.15);
+    }
+</style>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light shadow-sm fixed-top">
+        <div class="container px-5 py-2">
+            <a class="navbar-brand" href="#">Niaga Hoster</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Visi & Misi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Article</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Hero section -->
+    <section id="hero" style="padding-top: 9.5rem; padding-bottom: 5rem;">
+        <div class="container px-5">
+            <div class="row gx-5">
+                <div class="col-sm-7">
+                    <h1 class="display-2">Welcome to
+                        Niaga Hoster
+                        We're the best hosting in
+                        Indonesia
+                    </h1>
+                    <p class="lead">
+                        Tentang Niagahoster Telah dipercaya leboh dari 500.000 klien yang terdaftar dari seluruh
+                        Indonesia berkomitmen menyajikan teknologi terbaik untuk kesuksesan online anda. Bergabunglah
+                        bersama kami untuk menciptakan website impian anda bersama niagahoster!
+                    </p>
+                    <a href="#" class="btn py-2 px-4 rounded-5"
+                        style="background: linear-gradient(45deg, #2937f0, #9f1ae2) !important; color: white;">Get in
+                        touch</a>
+                </div>
+                <div class="col-sm-5">
+                    <img src="assets/img-content.png" width="500" class="img-responsive-none" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero section end -->
+
+    <!-- Quote -->
+    <section id="quotes" style="background: linear-gradient(45deg, #2937f0, #9f1ae2) !important;">
+        <div class="container px-5 py-2">
+            <div class="text-white fs-4 text-center mt-5">
+                "Telah dipercaya leboh dari 500.000 klien yang terdaftar dari seluruh Indonesia, Niaga Hoster selalu
+                berkomitmen menyajikan teknologi terbaik untuk kesuksesan online anda. Bergabunglah bersama kami untuk
+                menciptakan website impian anda bersama niagahoster!""
+            </div>
+            <div class="text-white fs-4 text-center mt-2 mb-5">
+                - Niaga Hoster -
+            </div>
+        </div>
+    </section>
+    <!-- Quote end -->
+
+    <!-- Culture -->
+    <section id="culture" class="">
+        <div class="container p-5">
+            <div class="row gx-5">
+                <div class="col-sm-4 img-responsive-none">
+                    <img src="assets/img-content.png" width="500" alt="">
+                </div>
+                <div class="col-sm-8 mb-5" style="margin-top: 100px;">
+                    <div class="container-fluid px-5">
+                        <div class="row gx-5">
+                            <div class="col-sm-6 mb-5">
+                                <div class="text-center">
+                                    <i class="bi bi-person-check text-gradient" style="font-size: 4rem;"></i>
+                                    <h3>Customer Obsession</h3>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mb-5">
+                                <div class="text-center">
+                                    <i class="bi bi-code-slash text-gradient" style="font-size: 4rem;"></i>
+                                    <h3>Ownership</h3>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mb-5">
+                                <div class="text-center">
+                                    <i class="bi bi-book-half text-gradient" style="font-size: 4rem;"></i>
+                                    <h3>Learn and Be Curious</h3>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mb-5">
+                                <div class="text-center">
+                                    <i class="bi bi-brightness-alt-high text-gradient" style="font-size: 4rem;"></i>
+                                    <h3>Highest Standard</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Culture end-->
+
+    <!-- Article -->
+    <section id="article" class="py-5">
+        <div class="container px-5">
+            <h1 class="display-2 text-center mb-5">Article</h1>
+            <div class="row gx-5 align-items-center justify-content-center">
+                <div class="col-sm-3 mt-5">
+                    <div class="card card-custom">
+                        <img src="assets/img-content.png" width="64px" height="64px" class="mt-5" alt="">
+                        <h5 class="card-title">Lorem</h5>
+                        <p class="card-text mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                            molestias exercitationem magnam
+                            adipisci reiciendis ut!</p>
+                            <a href="#" class="card-link">Card link</a>
+                        </div>
+                    </div>
+                <div class="col-sm-3 mt-5">
+                    <div class="card card-custom">
+                        <img src="assets/img-content.png" width="64px" height="64px" class="mt-5" alt="">
+                        <h5 class="card-title">Lorem</h5>
+                        <p class="card-text mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                            molestias exercitationem magnam
+                            adipisci reiciendis ut!</p>
+                        <a href="#" class="card-link">Card link</a>
+                    </div>
+                </div>
+                <div class="col-sm-3 mt-5">
+                    <div class="card card-custom">
+                        <img src="assets/img-content.png" width="64px" height="64px" class="mt-5" alt="">
+                        <h5 class="card-title">Lorem</h5>
+                        <p class="card-text mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                            molestias exercitationem magnam
+                            adipisci reiciendis ut!</p>
+                            <a href="#" class="card-link">Card link</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Article end-->
+
+    <!-- Partner -->
+    <section id="partner" class="py-5">
+        <div class="container px-5">
+            <h1 class="display-2 text-center mb-3">Partner</h1>
+            <div class="text-center fs-4 mb-2" style="color: #555;">
+            Dipercaya 52.000++ Pelanggan di Seluruh Indonesia <br>
+            building some of our favourite products at
+            </div>
+            <div class="text-center">
+                <img src="assets/dc.jpg" width="120px" height="120px" class="mt-5 text-center" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Partner end -->
+
+    <!-- Footer -->
+    <footer style="background: linear-gradient(45deg, #2937f0, #9f1ae2) !important;">
+        <div class="container py-4">
+            <div class="text-white text-center fs-6">Made with ❤ by MARS</div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
